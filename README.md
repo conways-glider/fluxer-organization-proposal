@@ -98,12 +98,28 @@ This also allows for Hampus and any core architects to still have necessary over
 A possible structure of this could be:
 
 - Core Platform
+  - Performance Sub-Group
 - Web & Desktop Interface
 - Mobile Interfaces
-- Infrastructure
+  - iOS Sub-Group
+  - Android Sub-Group
+- Infrastructure (for the Fluxer Hosted Servers)
 - Self-Hosted Support
+  - Docker Sub-Group
+  - Kubernetes Sub-Group
 
 Each Working Group should have a Lead and a Co-Lead, initially through nomination, but later on, groups could elect their own leaders. These Leads would be able to own a problem domain and allow Hampus to delegate as the problems grow in scale.
+
+Working Groups can also spawn focused **subgroups** for specific bounded tasks, features, or questions. Think of these like a DnD party assembled for a particular quest. The Working Group itself can be larger, but active subgroups should stay small: roughly 3-8 people. This keeps collaboration tight, decisions fast, and accountability clear. Once a subgroup's scoped work is complete, it can dissolve or reform around a new objective.
+
+### Trunk and Branch Developers
+
+As the contributor ecosystem grows, it's useful to distinguish between two tiers of developers:
+
+- **Trunk Developers**: Official Fluxer developers responsible for the stability and integrity of the main client. They focus on pushing updates, maintaining the core architecture, and ensuring a reliable foundation for all users. Trunk developers own the official release.
+- **Branch Developers**: Working Group members and community contributors who build features, explore new domains, or prototype ideas off the trunk. Their work may be commissioned by a Working Group or developed independently, and can later be integrated into the main client by trunk developers when it meets the bar for inclusion.
+
+When trunk developers integrate branch work into the main client, they may compensate the branch developer for that contribution. This creates a healthy feedback loop between the broader contributor community and the official release.
 
 ### Working Group Communication
 
@@ -166,6 +182,8 @@ At a starting point, values should remain small as to not over-extend Hampus or 
 
 To handle maintaining this program, tools such as [Open Collective](https://opencollective.com) or [Algora](https://algora.io/) should be considered as a disbursement method and management tool.
 
+As the organization matures, each Working Group may be allocated a monthly budget. This budget gives Working Group leads the ability to commission branch developers to build specific features that the department needs, and then coordinate integration into the main client through trunk developers. This connects the trunk/branch developer model directly to compensation: departments can actively fund the work they care about, and branch developers have a clear path to being paid for it.
+
 ### Security Risk Bug Bounties
 
 Maintaining a Bug Bounty or Security Risk Bounty program can bring value long-term to projects, however, they also bring a high management burden and are often susceptible to abuse. We should consider hosting a Bug Bounty program, but at a later stage.
@@ -175,6 +193,14 @@ Considering the recent difficulty in managing these, as seen by the [curl mainta
 ### Organization Promotion and Hiring
 
 When the Fluxer Organization is financially capable of on-boarding part-time or full-time employees, we should consider contributions as a potential source of candidates. Being transparent about this early on can help create trust in the Developer Community. We should be careful though of any messaging around this initiative and be clear that this is an eventual goal of the Organization and not something we're imminently planning.
+
+## Supporting Forks and Divergence
+
+Fluxer's codebase and organizational structure should make it easy for contributors who disagree with official decisions to fork the project and continue in their own direction. **Forks are not failures.** They are a natural and healthy expression of an open ecosystem.
+
+The "trunk" represents the official Fluxer direction, maintained by trunk developers and guided by Hampus as BDFL. But branches that diverge, whether as long-running forks, experimental clients, or community-maintained variants, are a welcomed outcome. They reflect genuine engagement with the software and demonstrate that the community finds it worth building on.
+
+To support this, the project should maintain clear licensing, well-documented architecture, and accessible tooling so that anyone who wants to take the codebase in a different direction can do so without unnecessary friction. A healthy open ecosystem looks like a tree: a strong trunk with many branches, some of which eventually grow in entirely new directions.
 
 ## Frequently Asked Questions
 
