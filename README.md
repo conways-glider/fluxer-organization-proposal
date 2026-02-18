@@ -1,4 +1,3 @@
-
 # Fluxer Organization Proposal
 
 In order to best support the development and future of Fluxer, we need a way to safely and consciously cultivate growth, proposals, and contributions. Looking at prior established organizations, we can identify some key patterns:
