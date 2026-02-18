@@ -18,6 +18,7 @@ To enable this, I propose the following:
 - Compensation for Developers
 
 ## Establishing Community Code of Conduct for Contributors
+
 This is most notably exemplified by the growth of the Rust and Zig Languages. By establishing a strong Code of Conduct, they were able to cultivate an inclusive community by declaring intention at the forefront of our community, ensuring people feel safe to contribute and that exclusive behavior can be prevented.
 
 To be clear, this Code of Conduct should be for the Fluxer Organization for contributions. Some of these guidelines may not be appropriate for the Fluxer Platform/Application, as servers should develop their own code of conduct.
@@ -32,7 +33,7 @@ Common Codes of Conduct can be found to have the following principles:
   - This is important as Fluxer grows, many decisions won't please everyone. We should acknowledge that every decision has tradeoffs and that many decisions don't have a right answer, but still need a decision made.
 - Ensuring all criticism has a purpose. Vague Criticism is unproductive and can lead to harming others within discussions.
 - Taking a stance on the "Paradox of Intolerance". This could also be phrased as intentional, extreme, or repetitive violations of the Code of Conduct can lead to being "timed-out", suspended from discussions, or blocked from contribution.
-  -  This should also be taken as notice that if you harass or demean members and contributors or troll discussions, you may be excluded for the safety of the community.
+  - This should also be taken as notice that if you harass or demean members and contributors or troll discussions, you may be excluded for the safety of the community.
 
 These guidelines are derived from successful organizations and should be a guiding principle while writing our Code of Conduct.
 
@@ -42,7 +43,7 @@ Additionally, we should also establish a way to report violations of the Code of
 
 Fluxer is currently hosted on GitHub, which has a wealth of support for Issues, Discussions, and Contributions. For proposals of features or changes, we should consider creating an Request for Comment (RFC) based system, where users can comment on proposals prior to committing to a design or feature and users can openly create proposals.
 
-To best support the openness of a full RFC Process, we should create a new git repository to host proposals. 
+To best support the openness of a full RFC Process, we should create a new git repository to host proposals.
 
 This repository would contains:
 
@@ -50,6 +51,8 @@ This repository would contains:
 - A Standard RFC Format that users can base suggestions on.
   - Pull Requests would be the hub of discussion around RFCs. This allows for complete openness of direction and maintaining an open history of discussion.
 - Guidelines for Reopening or Reworking Closed RFCs.
+
+Once a RFC has been accepted, the intended architecture and specification should be written and created as an Issue on the GitHub Repository.
 
 ## Establishing Working Groups
 
@@ -77,7 +80,26 @@ To best support the longevity of contributors, we should consider compensation f
 
 To best reward contributors for their time, we should consider a standard system:
 
-1. Security Risk Bug Bounties
-2. Pre-Allocated Contribution Compensation
+1. Pre-Allocated Contribution Compensation
+2. Security Risk Bug Bounties
 3. Organization Promotion and Hiring
 
+### Pre-Allocated Contribution Compensation
+
+For accepted RFCs, large feature additions, or major refactors, Hampus or the Fluxer Organization can establish pre-allocated rewards for contributions.
+
+This should be visible ahead of time as an Issue label. To maintain community trust, changing the value of Contributions should be avoided, as work may be underway when values are changed, and decreasing value after work starts erodes community trust and disincentivizes future contributions.
+
+At a starting point, values should remain small as to not over-extend Hampus or the Fluxer Organization, however as the Organization grows, values can be increased incrementally.
+
+To handle maintaining this program, tools such as [Open Collective](https://opencollective.com) or [Algora](https://algora.io/) should be considered as a disbursement method and management tool.
+
+### Security Risk Bug Bounties
+
+Maintaining a Bug Bounty or Security Risk Bounty program can bring value long-term to projects, however, they also bring a high management burden and are often susceptible to abuse. We should consider hosting a Bug Bounty program, but at a later stage.
+
+Considering the recent difficulty in managing these, as seen by the [curl maintainers](https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/), we should defer on creating a bug bounty until a later time when we have the resources to successfully manage the program.
+
+### Organization Promotion and Hiring
+
+When the Fluxer Organization is financially capable of on-boarding part-time or full-time employees, we should consider contributions as a potential source of candidates. Being transparent about this early on can help create trust in the Developer Community. We should be careful though of any messaging around this initiative and be clear that this is an eventual goal of the Organization and not something we're imminently planning.
